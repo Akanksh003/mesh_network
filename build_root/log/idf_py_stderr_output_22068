@@ -1,0 +1,15 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\tools\python\v5.5.2\venv\Scripts\python.exe -DESP_PLATFORM=1 -DSDKCONFIG_DEFAULTS=sdkconfig.defaults;sdkconfig.node -DCCACHE_ENABLE=1 C:\Users\vaiak\Mesh
+fatal: bad config line 2 in file C:/esp/v5.5.2/esp-idf/.git/modules/components/bootloader/subproject/components/micro-ecc/micro-ecc/config
+warning: the int symbol BRIDGE_SOFTAP_MAX_CONNECT_NUMBER (defined at C:/Users/vaiak/Mesh/managed_components/espressif__iot_bridge/Kconfig:108) has a non-int default BRIDGE_CUSTOM_MAX_CONNECT_NUMBER (undefined)
+warning: the value '42                     # Custom Mesh ID (must match Root & Node)' is invalid for MESH_LITE_ID (defined at C:/Users/vaiak/Mesh/managed_components/espressif__mesh_lite/Kconfig:20), which has type int -- assignment ignored
+warning: the value '8       # Max child nodes' is invalid for MESH_LITE_MAX_ROUTER_NUMBER (defined at C:/Users/vaiak/Mesh/managed_components/espressif__mesh_lite/Kconfig:24), which has type int -- assignment ignored
+warning: the value '5   # Tree depth' is invalid for MESH_LITE_MAXIMUM_LEVEL_ALLOWED (defined at C:/Users/vaiak/Mesh/managed_components/espressif__mesh_lite/Kconfig:29), which has type int -- assignment ignored
+C:\Users\vaiak\AppData\Local\Temp\kconfgen_tmpau4rdjjd:28: warning: ignoring malformed line 'CONFIG_ESP32_WIFI_DYNAMIC_TX_BUFFER_32'
+info: Choice PARTITION_TABLE_TYPE has multiple active selections. The last one will be used: PARTITION_TABLE_TWO_OTA .
+fatal: bad config line 2 in file C:/esp/v5.5.2/esp-idf/.git/modules/components/openthread/openthread/config
+fatal: bad config line 2 in file C:/esp/v5.5.2/esp-idf/.git/modules/components/lwip/lwip/config
+error: patch failed: components/lwip/apps/dhcpserver/dhcpserver.c:1267
+error: components/lwip/apps/dhcpserver/dhcpserver.c: patch does not apply
+fatal: bad config line 2 in file C:/esp/v5.5.2/esp-idf/.git/modules/components/lwip/lwip/config
+fatal: bad config line 2 in file C:/esp/v5.5.2/esp-idf/.git/modules/components/lwip/lwip/config
+fatal: not a git repository (or any of the parent directories): .git

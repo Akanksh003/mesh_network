@@ -1,0 +1,16 @@
+menu "Mesh Role Configuration"
+
+    choice MESH_ROLE
+        prompt "Mesh Device Role"
+        default MESH_ROLE_NODE
+        help
+            Select the device role. Only one can be active.
+
+        config MESH_ROLE_ROOT
+            bool "Root (Gateway)"
+
+        config MESH_ROLE_NODE
+            bool "Node (Child)"
+    endchoice
+
+endmenu

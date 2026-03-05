@@ -1,0 +1,61 @@
+# ------------------------------------
+# Flash & Partition Settings
+# ------------------------------------
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y           # Match physical flash
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME=""  # Use default partition table
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_FILENAME="partitions.csv"
+CONFIG_PARTITION_TABLE_OFFSET=0x8000
+CONFIG_PARTITION_TABLE_TWO_OTA=y           # OTA support
+CONFIG_PARTITION_TABLE_CUSTOM_APP_BIN_OFFSET=0x10000
+CONFIG_SPI_FLASH_SUPPORT_BOYA_CHIP=y
+
+# ------------------------------------
+# ESP-MESH-LITE Settings
+# ------------------------------------
+CONFIG_MESH_LITE_ENABLE=y                  # Must be enabled
+CONFIG_MESH_LITE_ID=42                     # Custom Mesh ID (must match Root & Node)
+CONFIG_MESH_LITE_MAX_ROUTER_NUMBER=8       # Max child nodes
+CONFIG_MESH_LITE_MAXIMUM_LEVEL_ALLOWED=5   # Tree depth
+CONFIG_MESH_LITE_ENABLE_LOG=y              # Enable mesh debug logs
+
+
+# ------------------------------------
+# Wi-Fi Settings
+# ------------------------------------
+CONFIG_ESP32_WIFI_STATIC_RX_BUFFER_NUM=10
+CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM=32
+CONFIG_ESP32_WIFI_DYNAMIC_TX_BUFFER_32
+CONFIG_ESP32_WIFI_TX_BUFFER_TYPE=1
+CONFIG_ESP32_WIFI_SOFTAP_MAX_CONNECTIONS=8
+CONFIG_ESP32_WIFI_STA_DISCONNECTED_PM=0    # Disable power save for mesh stability
+
+# ------------------------------------
+# Bridge / NAT Settings (Optional)
+# ------------------------------------
+CONFIG_IOT_BRIDGE=y
+CONFIG_IOT_BRIDGE_ENABLE_NAPT=y            # Enable NAT for nodes
+CONFIG_IOT_BRIDGE_ENABLE_DHCP=y            # DHCP server for nodes
+
+# ------------------------------------
+# Logging & Debug
+# ------------------------------------
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
+CONFIG_LOG_COLORS=y
+
+# ------------------------------------
+# Mesh info reporting
+# ------------------------------------
+CONFIG_MESH_LITE_NODE_INFO_REPORT=y
+
+# ------------------------------------
+# Timer
+# ------------------------------------
+CONFIG_FREERTOS_TIMER_TASK_STACK_DEPTH=8192
+
+# ------------------------------------
+# IoT bridge
+# ------------------------------------
+CONFIG_BRIDGE_SOFTAP_SSID_END_WITH_THE_MAC=y
+CONFIG_BRIDGE_SOFTAP_SSID="IOT_GATEWAY"
+CONFIG_BRIDGE_SOFTAP_PASSWORD="12345678"

@@ -1,0 +1,2 @@
+dependencies:
+  espressif/mesh_lite: ^1.0.2

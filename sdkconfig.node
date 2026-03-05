@@ -1,0 +1,5 @@
+# ------------------------------------
+# Role selection
+# ------------------------------------
+CONFIG_MESH_ROLE_ROOT=n
+CONFIG_MESH_ROLE_NODE=y
